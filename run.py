@@ -20,6 +20,13 @@ class Questions:
         user_answer = input("Your answer: ").upper()
         return user_answer == self.answer
 
+    def countdown_timer(self, time_limit):
+        print("\nTime remaining:")
+        for remaining_time in range(time_limit, 0, -1):
+            print(f"{remaining_time} seconds", end="\r")
+            time.sleep(1)
+        print() 
+
 questions = {
     "easy": [
         Question("What is the capital of France?",
