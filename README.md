@@ -1,52 +1,31 @@
-# Rock Paper scissors
+# Quiz Game
 
-I created a web app for the game rock paper scissors. Rock, Paper, Scissors is a hand game typically played between two people. It's a simple game used to make a decision or settle a dispute. Each player simultaneously forms one of three shapes with their hand:
-
-Rock: The player forms a fist with their hand.
-Paper: The player extends their hand flat, with the palm facing down.
-Scissors: The player extends their hand with the index and middle fingers extended and spread apart, resembling a pair of scissors.
-
-The basic rules of Rock, Paper, Scissors are as follows:
-
-Rock beats scissors (rock smashes scissors).
-Scissors beat paper (scissors cut paper).
-Paper beats rock (paper covers rock).
-When both players have made their choices, they reveal their hand gestures at the same time. The winning gesture is determined by the rules above. If both players make the same gesture, it's a tie, and the game can be played again. The game would be of interest to anyone who wants to play Rock, paper Scissors.
+I created a 
 
 # Technologies used
-* HTML
-* CSS
-* JAVASCRIPT
+* PYTHON
 
 ## Features 
 
-![rpsScreenshot](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/c24d3e27-65af-4f29-901e-516692634ff0)
+![rpsScreenshot]()
 
-### Choice Buttons
-
-* There are three buttons to make your selection, each button shakes and lights up when selected to give the user some feedback to their actions and enhance the user experience, the shake also simulates the act of playing in real life.
-
-![button](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/acf25b46-ec2f-4b3c-8c06-bf8a5f056191)
+### Username
 
 
 
-### Previous Selection
+### time limit
 
-* The game features an area to display the previous pick for both the player and the computer, a message section which gives feedback after each round, a scoreboard to keep track of the score and three choice buttons which shake to simulate the shaking of the hand before each choice.
-
-* The last pick display shows either a red of green border depending on whether the player or the computer won the round.
-  
 ![win](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/e0a3cb0d-f43d-4ff7-9dd3-c01f47bc53bd)
-  ### Message 
 
-* The message section will display one from a choice of messages depening on whether the player won or lost the round or if it was a draw.
+### Message 
 
- ![message](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/7a101fb5-54c3-4610-8cdc-df2e40a8ae0f) ![lose](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/7028c876-8371-42e1-9861-c191b584e6b6)
+* 
+![message](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/7a101fb5-54c3-4610-8cdc-df2e40a8ae0f) ![lose](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/7028c876-8371-42e1-9861-c191b584e6b6)
 
 
   ### Game Over
 
-* When either the player or the computer reaches 5 points the choice buttons are hidden and "Game Over" is displayed along with a message informing the player they either won or lost the game. A button to restart the game appears which will then reset everything to the default state when pressed.
+* 
 
  ![over](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/72943755-f147-4167-80ba-ae5175575786)
 
@@ -56,13 +35,11 @@ When both players have made their choices, they reveal their hand gestures at th
 
 ## Testing
 
-* I tested the site worked in different browswers, eg Firefox, Edge and Chrome.
-
-* I tested the game worked on PC and mobile devices, testing both android and Iphone.
-
-* I confirmed the site is responsive and works on all device types and in both portrait and landscape on mobile devices.
+* 
+*
+* 
   
-![Screenshot 2023-07-03 163605](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/a5432ba1-c86c-4b0b-84d5-7a359c5ff54f)
+![)
 
 
 * The buttons shake as intended on all device types and rapid pressing of the ssame button in succession will not break the game or affect the game counting of the score.
@@ -81,48 +58,26 @@ I solved this by changing "const playerChoice = event.target.dataset.choice;" in
 
 ## Validator Testing
 
-### HTML
-
-* The site passes through the HTML checker with no warnings or errors. [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewneo82.github.io%2FRock_Paper_Scissors%2F)
-
-### CSS
-
-* I ran the code through the W3C CSS Validator and it passes with no errors or warnings. [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandrewneo82.github.io%2FRock_Paper_Scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-### Javascript 
-
-* The code passes through JShint and there are no errors or warnings.
-
-
-### Accessability
-
-Running lighthouse confirmed that the colours and fonts were accesible and easy to read.
-
-![lighthouse](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/c9118692-e66d-4111-b32f-c585fed64447)
+### PYTHON
 
 
 ## Deployment
 
-The site was deployed to github pages. The steps to depoloy were as follows.
 
-* In the Github repository navigate to the settings tab.
-* From the source section drop-down menu, select deploy from branch.
-* From the branch drop down menu select Main branch and the root folder and save.
 
-The live link can be found here https://andrewneo82.github.io/Rock_Paper_Scissors/
+The live link can be found here 
 
 ## Credits   
 
 ### Content
 
-* The code to make the buttons shake to simulate the shaking of a fist while playing Rock Paper Scissors was taken from [css-tricks](https://css-tricks.com/snippets/css/shake-css-keyframe-animation/) and was published by a Sarah Drasner.
+
 
   
 
 
-*  The explanation of the game Rock Paper Scissors used in this readme was found online.
 
 ## Media
 
-The icons are from fontawesome.com.
 
 
