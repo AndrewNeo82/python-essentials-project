@@ -1,6 +1,9 @@
 import random
 
 class Questions:
+    """
+    structure for question contains the question, options and answers
+    """
     def __init__(self, question, options, answer):
         self.question = question
         self.options = options
@@ -85,8 +88,12 @@ questions = {
 
 
 def play_quiz(difficulty, username):
+    """
+    Plays the quiz. Randomises the order of the questions
+
+    """
     questions_list = questions[difficulty]
-    random.shuffle(questions_list)  # Randomize the order of questions
+    random.shuffle(questions_list) 
     score = 0
 
     for question in questions_list:
@@ -103,6 +110,9 @@ def play_quiz(difficulty, username):
 
 
 def main():
+    """
+    The main game function, takes the players username gives choice of difficulty handles invalid choices.
+    """
     ascii_art = r"""
                         88            
                         ""            
