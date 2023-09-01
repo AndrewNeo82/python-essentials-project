@@ -17,7 +17,7 @@ class Questions:
         print("\nTime's up!")
         input("Press Enter to continue...")
         
-        user_answer = input("Your answer: ")
+        user_answer = input("Your answer: ").upper()
         return user_answer == self.answer
 
     def countdown_timer(self, time_limit):
