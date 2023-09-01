@@ -93,3 +93,9 @@ questions = {
                  "D"),
     ]
 }
+
+
+def play_quiz(difficulty, username):
+    questions_list = questions[difficulty]
+    random.shuffle(questions_list)  # Randomize the order of questions
+    score = 0
