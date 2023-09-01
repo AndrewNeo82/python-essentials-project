@@ -110,7 +110,7 @@ def play_quiz(difficulty, username):
             print("Incorrect!")
 
     print("\n" + "="*30)
-    print(f"Quiz completed, {username}! Your score: {score}/{len(questions_list)}")
+    print(f"Quiz completed,{username}!Your score: {score}/{len(questions_list)}")
 
 
 def main():
@@ -120,14 +120,18 @@ def main():
                                       
  ,adPPYb,d8 88       88 88 888888888  
 a8"    `Y88 88       88 88      a8P"  
-8b       88 88       88 88   ,d8P'    
-"8a    ,d88 "8a,   ,a88 88 ,d8"       
+8b       88 88       88 88   ,d8P'
+"8a    ,d88 "8a,   ,a88 88 ,d8"
  `"YbbdP'88  `"YbbdP'Y8 88 888888888  
-         88                           
-         88    
+         88                 
+         88
                                            
     """
     print(ascii_art)
     print("Welcome to the Quiz Game!")
 
+
     username = input("Enter your username: ")
+
+
+   main()
