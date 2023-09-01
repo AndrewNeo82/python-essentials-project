@@ -127,11 +127,27 @@ a8"    `Y88 88       88 88      a8P"
          88
                                            
     """
-    print(ascii_art)
+     print(ascii_art)
     print("Welcome to the Quiz Game!")
-
 
     username = input("Enter your username: ")
 
+    while True:
+        print("\nSelect difficulty:")
+        print("1. Easy")
+        print("2. Hard")
+        print("3. Quit")
+        choice = input("Enter your choice: ")
 
-   main()
+        if choice == "1":
+            play_quiz("easy", username)
+        elif choice == "2":
+            play_quiz("hard", username)
+        elif choice == "3":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select a valid option.")
+
+if __name__ == "__main__":
+    main()
