@@ -17,7 +17,7 @@ class Questions:
         print("\nTime's up!")
         input("Press Enter to continue...")
         
-        user_answer = input("Your answer: ").upper()
+        user_answer = input("Your answer: ")
         return user_answer == self.answer
 
     def countdown_timer(self, time_limit):
@@ -71,7 +71,7 @@ questions = {
                  ["A) Friedrich Nietzsche", "B) Immanuel Kant", "C) Søren Kierkegaard", "D) Jean-Jacques Rousseau"],
                  "B"),
         Question("What is the largest species of shark?",
-                 ["A) Great White", "B) Hammerhead", "C) Whale Shark", "D) Tiger SHARK"],
+                 ["A) Great White", "B) Hammerhead Shark", "C) Whale Shark", "D) Tiger Shark"],
                  "A"),
         Question("In which year did the Berlin Wall fall, leading to the reunification of Germany?",
                  ["A) 1985", "B) 1989", "C) 1991", "D) 1995"],
