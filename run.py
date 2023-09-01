@@ -100,7 +100,7 @@ def play_quiz(difficulty, username):
     random.shuffle(questions_list)  # Randomize the order of questions
     score = 0
 
-for question in questions_list:
+    for question in questions_list:
         print("\n" + "="*30)
         print(f"Question: {questions_list.index(question) + 1}")
         if question.ask(10 if difficulty == "easy" else 5):
@@ -111,3 +111,23 @@ for question in questions_list:
 
     print("\n" + "="*30)
     print(f"Quiz completed, {username}! Your score: {score}/{len(questions_list)}")
+
+
+def main():
+    ascii_art = r"""
+                        88            
+                        ""            
+                                      
+ ,adPPYb,d8 88       88 88 888888888  
+a8"    `Y88 88       88 88      a8P"  
+8b       88 88       88 88   ,d8P'    
+"8a    ,d88 "8a,   ,a88 88 ,d8"       
+ `"YbbdP'88  `"YbbdP'Y8 88 888888888  
+         88                           
+         88    
+                                           
+    """
+    print(ascii_art)
+    print("Welcome to the Quiz Game!")
+
+    username = input("Enter your username: ")
