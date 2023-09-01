@@ -99,3 +99,15 @@ def play_quiz(difficulty, username):
     questions_list = questions[difficulty]
     random.shuffle(questions_list)  # Randomize the order of questions
     score = 0
+
+    for question in questions_list:
+        print("\n" + "="*30)
+        print(f"Question: {questions_list.index(question) + 1}")
+        if question.ask(10 if difficulty == "easy" else 5):
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect!")
+
+    print("\n" + "="*30)
+    print(f"Quiz completed, {username}! Your score: {score}/{len(questions_list)}")
