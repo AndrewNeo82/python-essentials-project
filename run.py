@@ -1,7 +1,7 @@
 import random
 import time
 
-class Questions:
+class Question:
     """
     structure for question contains the question, options and answers
     """
