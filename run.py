@@ -9,13 +9,27 @@ class Questions:
         self.options = options
         self.answer = answer
 
-    def ask(self, ):
+    def ask(self, timeout=60):
+        """
+        Ask the question and collect the user's answer within a specified timeout.
+
+        Args:
+            timeout (int, optional): The time limit in seconds to answer the question. Default is 60 seconds.
+
+        Returns:
+            bool: True if the user's answer is correct, False otherwise.
+        """
         print(self.question)
         for option in self.options:
             print(option)
-        
-        
-        user_answer = input("Your answer: ").upper()
+
+        while True:
+            user_answer = input("Your answer (A, B, C, or D): ").upper()
+            if user_answer in ["A", "B", "C", "D"]:
+                break
+            else:
+                print("Invalid choice. Please select A, B, C, or D.")
+
         return user_answer == self.answer
 
 
