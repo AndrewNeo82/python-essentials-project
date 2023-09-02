@@ -1,6 +1,6 @@
 # Quiz Game
 
-I created a 
+I created a Quiz game using python. The quiz allows the user to test their general knowledge with two different difficulty levels.
 
 # Technologies used
 * PYTHON
@@ -10,6 +10,9 @@ I created a
 ![rpsScreenshot]()
 
 ### Username
+
+* Game allows user to input their username to add to the user experience
+
 
 
 
