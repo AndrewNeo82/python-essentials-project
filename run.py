@@ -158,11 +158,11 @@ a8"    `Y88 88       88 88      a8P"
          88
                                            
     """
-     print(ascii_art)
+    print(ascii_art)
     print("Welcome to the Quiz Game!")
+    print("You have 60 seconds to complete the quiz.")
 
     username = input("Enter your username: ")
-
     while True:
         print("\nSelect difficulty:")
         print("1. Easy")
