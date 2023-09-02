@@ -108,20 +108,37 @@ def play_quiz(difficulty, username):
 
     """
     questions_list = questions[difficulty]
-    random.shuffle(questions_list) 
+    random.shuffle(questions_list)
+    questions_list = questions_list[:5]  # Select 5 random questions
     score = 0
 
+    total_questions = len(questions_list)
+    time_limit = 60  # 60 seconds for the entire quiz
+
+    print("\n" + "="*60)
+    print(f"Quiz started for {time_limit} seconds...")
+    start_time = time.time()
+
     for question in questions_list:
-        print("\n" + "="*30)
+        print("\n" + "="*60)
         print(f"Question: {questions_list.index(question) + 1}")
-        if question.ask(10 if difficulty == "easy" else 5):
+        print(f"Time remaining: {time_limit} seconds")
+
+        if question.ask(time_limit):
             print("Correct!")
             score += 1
         else:
             print("Incorrect!")
 
-    print("\n" + "="*30)
-    print(f"Quiz completed,{username}!Your score: {score}/{len(questions_list)}")
+        elapsed_time = time.time() - start_time
+        time_limit -= int(elapsed_time)  # Subtract elapsed time from the time limit
+
+        if time_limit <= 0:
+            print("Time's up!")
+            break
+
+    print("\n" + "="*60)
+    print(f"Quiz completed, {username}! Your score: {score}/{total_questions}")
 
 
 def main():
