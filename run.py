@@ -1,5 +1,7 @@
 import random
+
 import time
+
 
 class Question:
     """
@@ -10,15 +12,10 @@ class Question:
         self.options = options
         self.answer = answer
 
-    def ask(self, timeout=60):
+    def ask(self,):
         """
-        Ask the question and collect the user's answer within a specified timeout.
+        Ask the question and collect the user's answer.
 
-        Args:
-            timeout (int, optional): The time limit in seconds to answer the question. Default is 60 seconds.
-
-        Returns:
-            bool: True if the user's answer is correct, False otherwise.
         """
         print(self.question)
         for option in self.options:
@@ -146,17 +143,16 @@ def main():
     The main game function, takes the players username gives choice of difficulty handles invalid choices.
     """
     ascii_art = r"""
-                        88            
-                        ""            
-                                      
- ,adPPYb,d8 88       88 88 888888888  
-a8"    `Y88 88       88 88      a8P"  
+                        88
+                        ""
+ ,adPPYb,d8 88       88 88 888888888
+a8"    `Y88 88       88 88      a8P"
 8b       88 88       88 88   ,d8P'
 "8a    ,d88 "8a,   ,a88 88 ,d8"
  `"YbbdP'88  `"YbbdP'Y8 88 888888888  
-         88                 
          88
-                                           
+         88
+                                
     """
     print(ascii_art)
     print("Welcome to the Quiz Game!")
@@ -180,5 +176,7 @@ a8"    `Y88 88       88 88      a8P"
         else:
             print("Invalid choice. Please select a valid option.")
 
+
 if __name__ == "__main__":
+
     main()
