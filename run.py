@@ -149,14 +149,13 @@ def main():
 a8"    `Y88 88       88 88      a8P"
 8b       88 88       88 88   ,d8P'
 "8a    ,d88 "8a,   ,a88 88 ,d8"
- `"YbbdP'88  `"YbbdP'Y8 88 888888888  
+ `"YbbdP'88  `"YbbdP'Y8 88 888888888
          88
          88
-                                
     """
     print(ascii_art)
-    print("Welcome to the Quiz Game!")
-    print("You have 60 seconds to complete the quiz.")
+    print("Welcome to My Quiz Game!")
+    print("You have 60 seconds to complete the quiz, there are 5 random questions")
 
     username = input("Enter your username: ")
     while True:
