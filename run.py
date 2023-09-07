@@ -140,7 +140,7 @@ def play_quiz(difficulty, username):
 
 def main():
     """
-    The main game function, takes the players username gives choice of difficulty handles invalid choices.
+    The main game function, takes the players username gives choice of dificulty handles invalid choices.
     """
     ascii_art = r"""
                         88
