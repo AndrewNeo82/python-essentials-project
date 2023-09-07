@@ -22,7 +22,7 @@ class Question:
             print(option)
 
         while True:
-            user_answer = input("Your answer (A, B, C, or D): ").upper()
+            user_answer = input("Your answer is  (A, B, C, or D): ").upper()
             if user_answer in ["A", "B", "C", "D"]:
                 break
             else:
