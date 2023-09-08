@@ -103,7 +103,7 @@ questions = {
 
 def play_quiz(difficulty, username):
     """
-    Plays the quiz. Randomizes the order of the questions.
+    Plays the quiz. Randomizes the order of the questions. displays how long left to complete quiz
     """
     questions_list = questions[difficulty]
     random.shuffle(questions_list)
