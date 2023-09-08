@@ -1,18 +1,16 @@
 import random
-
 import time
-
 
 class Question:
     """
-    structure for question contains the question, options and answers
+    Structure for questions containing the question, options, and answers.
     """
     def __init__(self, question, options, answer):
         self.question = question
         self.options = options
         self.answer = answer
 
-    def ask(self,):
+    def ask(self, time_limit):
         """
         Ask the question and collect the user's answer.
 
@@ -21,15 +19,21 @@ class Question:
         for option in self.options:
             print(option)
 
+        start_time = time.time()
         while True:
-            user_answer = input("Your answer is  (A, B, C, or D): ").upper()
+            user_answer = input("Your answer is (A, B, C, or D): ").upper()
             if user_answer in ["A", "B", "C", "D"]:
                 break
             else:
                 print("Invalid choice. Please select A, B, C, or D.")
 
-        return user_answer == self.answer
+        elapsed_time = time.time() - start_time
+        time_limit -= int(elapsed_time)
+        if time_limit <= 0:
+            print("Time's up!")
+            return False
 
+        return user_answer == self.answer
 
 questions = {
     "easy": [
@@ -48,7 +52,7 @@ questions = {
         Question("Which gas do plants primarily use for photosynthesis?",
                  ["A) Oxygen", "B) Nitrogen", "C) Hydrogen", "D) Carbon Dioxide"],
                  "D"),
-        Question("What is the capital of Japan",
+        Question("What is the capital of Japan?",
                  ["A) Beijing", "B) Tokyo", "C) Seoul", "D) Bangkok"],
                  "B"),
         Question("Which famous scientist developed the theory of relativity?",
@@ -69,7 +73,7 @@ questions = {
                  ["A) 1989", "B) 1991", "C) 2000", "D) 2005"],
                  "B"),
         Question("What is the smallest prime number?",
-                 ["A) 0", "B) 1", "C)2", "D)3"],
+                 ["A) 0", "B) 1", "C) 2", "D) 3"],
                  "C"),
         Question("Which philosopher is known for his work Critique of Pure Reason?",
                  ["A) Friedrich Nietzsche", "B) Immanuel Kant", "C) Søren Kierkegaard", "D) Jean-Jacques Rousseau"],
@@ -81,28 +85,26 @@ questions = {
                  ["A) 1985", "B) 1989", "C) 1991", "D) 1995"],
                  "B"),
         Question("Which novel features the characters Winston Smith and Big Brother?",
-                 ["A)Brave New World ", "B)1984 ", "C) Farenheit 451", "D) The Giver"],
+                 ["A) Brave New World", "B) 1984", "C) Fahrenheit 451", "D) The Giver"],
                  "B"),
         Question("What is the rarest blood type among humans?",
-                 ["A) A", "B)B ", "C)AB ", "D) O Negative"],
+                 ["A) A", "B) B", "C) AB", "D) O Negative"],
                  "D"),
         Question("Which artist painted The Persistence of Memory, featuring melting clocks?",
-                 ["A)Salvador Dali ", "B) Pablo Picasso", "C) Vincent Van Gogh", "D)Leonardo Da Vinci "],
+                 ["A) Salvador Dali", "B) Pablo Picasso", "C) Vincent Van Gogh", "D) Leonardo Da Vinci"],
                  "A"),
         Question("What is the largest organ in the human body?",
-                 ["A) Liver", "B)Brain ", "C) Skin", "D) Heart"],
+                 ["A) Liver", "B) Brain", "C) Skin", "D) Heart"],
                  "C"),
         Question("Which particle is responsible for carrying the electromagnetic force?",
-                 ["A) Proton ", "B) Neutron", "C) Electron", "D) Photon"],
+                 ["A) Proton", "B) Neutron", "C) Electron", "D) Photon"],
                  "D"),
     ]
 }
 
-
 def play_quiz(difficulty, username):
     """
-    Plays the quiz. Randomises the order of the questions
-
+    Plays the quiz. Randomizes the order of the questions.
     """
     questions_list = questions[difficulty]
     random.shuffle(questions_list)
@@ -128,7 +130,7 @@ def play_quiz(difficulty, username):
             print("Incorrect!")
 
         elapsed_time = time.time() - start_time
-        time_limit -= int(elapsed_time)  # Subtract elapsed time from the time limit
+        time_limit -= int(elapsed_time)
 
         if time_limit <= 0:
             print("Time's up!")
@@ -137,10 +139,9 @@ def play_quiz(difficulty, username):
     print("\n" + "="*60)
     print(f"Quiz completed, {username}! Your score: {score}/{total_questions}")
 
-
 def main():
     """
-    The main game function, takes the players username gives choice of dificulty handles invalid choices.
+    The main game function, takes the player's username, gives the choice of difficulty, and handles invalid choices.
     """
     ascii_art = r"""
                         88
@@ -175,7 +176,5 @@ a8"    `Y88 88       88 88      a8P"
         else:
             print("Invalid choice. Please select a valid option.")
 
-
 if __name__ == "__main__":
-
     main()
