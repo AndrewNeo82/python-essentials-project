@@ -11,29 +11,29 @@ class Question:
         self.answer = answer
 
     def ask(self, time_limit):
-        """
-        Ask the question and collect the user's answer.
+    """
+    Ask the question and collect the user's answer.
 
-        """
-        print(self.question)
-        for option in self.options:
-            print(option)
+    """
+    print(self.question)
+    for option in self.options:
+        print(option)
 
-        start_time = time.time()
-        while True:
-            user_answer = input("Your answer is (A, B, C, or D): ").upper()
-            if user_answer in ["A", "B", "C", "D"]:
-                break
-            else:
-                print("Invalid choice. Please select A, B, C, or D.")
+    start_time = time.time()
+    while True:
+        user_answer = input("Your answer is (A, B, C, or D): ").upper()
+        if user_answer in ["A", "B", "C", "D"]:
+            break
+        else:
+            print("Invalid choice. Please select A, B, C, or D.")
 
-        elapsed_time = time.time() - start_time
-        time_limit -= int(elapsed_time)
-        if time_limit <= 0:
-            print("Time's up!")
-            return False
+    elapsed_time = time.time() - start_time
+    time_limit -= int(elapsed_time)
+    if time_limit <= 0:
+        print("Time's up!")
+        return False
 
-        return user_answer == self.answer
+    return user_answer == self.answer
 
 questions = {
     "easy": [
