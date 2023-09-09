@@ -2,6 +2,8 @@ import random
 import time
 
 TIME_LIMIT = 60
+MAX_QUESTIONS = 5 
+
 
 
 class Question:
@@ -110,7 +112,7 @@ def play_quiz(difficulty, username):
     """
     questions_list = questions[difficulty]
     random.shuffle(questions_list)
-    questions_list = questions_list[:5]  # Select 5 random questions
+    questions_list = questions_list[:MAX_QUESTIONS]  # Use the constant here
     score = 0
 
     total_questions = len(questions_list)
