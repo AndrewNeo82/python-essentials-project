@@ -22,21 +22,20 @@ class Question:
         for option in self.options:
             print(option)
 
-        start_time = time.time()
-        while True:
-            user_answer = input("Your answer is (A, B, C, or D): ").upper()
-            if user_answer in ["A", "B", "C", "D"]:
-                break
-            else:
-                print("Invalid choice. Please select A, B, C, or D.")
-
-        elapsed_time = time.time() - start_time
-        remaining_time = TIME_LIMIT - int(elapsed_time)
-        if remaining_time <= 0:
-            print("Time's up!")
-            return False
-
+        user_answer = get_user_answer()
         return user_answer == self.answer
+
+def get_user_answer():
+    """
+    Get the user's answer and ensure it is valid (A, B, C, or D).
+    """
+    while True:
+        user_answer = input("Your answer is (A, B, C, or D): ").upper()
+        if user_answer in ["A", "B", "C", "D"]:
+            return user_answer
+        else:
+            print("Invalid choice. Please select A, B, C, or D.")
+
 
 questions = {
     "easy": [
