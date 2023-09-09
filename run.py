@@ -2,7 +2,7 @@ import random
 import time
 
 TIME_LIMIT = 60
-MAX_QUESTIONS = 5 
+MAX_QUESTIONS = 5
 
 
 class Question:
@@ -24,6 +24,7 @@ class Question:
 
         user_answer = get_user_answer()
         return user_answer == self.answer
+
 
 def get_user_answer():
     """
@@ -104,6 +105,7 @@ questions = {
     ]
 }
 
+
 def play_quiz(difficulty, username):
     """
     Plays the quiz. Randomizes the order of the questions.
@@ -139,6 +141,7 @@ def play_quiz(difficulty, username):
 
     print("\n" + "="*60)
     print(f"Quiz completed, {username}! Your score: {score}/{total_questions}")
+
 
 def main():
     """
@@ -180,6 +183,7 @@ Good Luck!
             break
         else:
             print("Invalid choice. Please select a valid option.")
+
 
 if __name__ == "__main__":
     main()
