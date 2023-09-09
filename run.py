@@ -154,10 +154,11 @@ a8"    `Y88 88       88 88      a8P"
  `"YbbdP'88  `"YbbdP'Y8 88 888888888
          88
          88
+Welcome to My Quiz Game!
+You have 60 seconds to complete the quiz, there are 5 random questions.
+Good Luck!
     """
     print(ascii_art)
-    print("Welcome to My Quiz Game!")
-    print("You have 60 seconds to complete the quiz, there are 5 random questions")
 
     username = input("Enter your username: ")
     while True:
