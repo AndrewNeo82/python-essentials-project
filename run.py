@@ -1,6 +1,9 @@
 import random
 import time
 
+TIME_LIMIT = 60
+
+
 class Question:
     """
     Structure for questions containing the question, options, and answers.
@@ -10,7 +13,7 @@ class Question:
         self.options = options
         self.answer = answer
 
-    def ask(self, time_limit):
+    def ask(self):
         """
         Ask the question and collect the user's answer.
         """
@@ -27,8 +30,8 @@ class Question:
                 print("Invalid choice. Please select A, B, C, or D.")
 
         elapsed_time = time.time() - start_time
-        time_limit -= int(elapsed_time)
-        if time_limit <= 0:
+        remaining_time = TIME_LIMIT - int(elapsed_time)
+        if remaining_time <= 0:
             print("Time's up!")
             return False
 
@@ -103,7 +106,7 @@ questions = {
 
 def play_quiz(difficulty, username):
     """
-    Plays the quiz. Randomizes the order of the questions. displays how long left to complete quiz
+    Plays the quiz. Randomizes the order of the questions.
     """
     questions_list = questions[difficulty]
     random.shuffle(questions_list)
@@ -111,32 +114,30 @@ def play_quiz(difficulty, username):
     score = 0
 
     total_questions = len(questions_list)
-    time_limit = 60  # 60 seconds for the entire quiz
 
     print("\n" + "="*60)
-    print(f"Quiz started for {time_limit} seconds...")
+    print(f"Quiz started for {TIME_LIMIT} seconds...")
     start_time = time.time()
 
     for question in questions_list:
         print("\n" + "="*60)
         print(f"Question: {questions_list.index(question) + 1}")
-        print(f"Time remaining: {time_limit} seconds")
+        print(f"Time remaining: {TIME_LIMIT - int(time.time() - start_time)} seconds")
 
-        if question.ask(time_limit):
+        if question.ask():
             print("Correct!")
             score += 1
         else:
             print("Incorrect!")
 
         elapsed_time = time.time() - start_time
-        time_limit -= int(elapsed_time)
-
-        if time_limit <= 0:
+        if elapsed_time >= TIME_LIMIT:
             print("Time's up!")
             break
 
     print("\n" + "="*60)
     print(f"Quiz completed, {username}! Your score: {score}/{total_questions}")
+
 
 def main():
     """
