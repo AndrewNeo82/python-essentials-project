@@ -47,7 +47,7 @@ questions = {
                  ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
                  "B"),
         Question("Who painted the Mona Lisa?",
-                 ["A) Vincent van Gogh", "B) Leonardo da Vinci", "C) Pablo Picasso", "D) Michelangelo"],
+                 ["A) Van Gogh", "B) da Vinci", "C) Picasso", "D) Monet"],
                  "B"),
         Question("What is the largest mammal in the world?",
                  ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Lion"],
@@ -79,12 +79,12 @@ questions = {
                  ["A) 0", "B) 1", "C) 2", "D) 3"],
                  "C"),
         Question("Which philosopher is known for his work Critique of Pure Reason?",
-                 ["A) Friedrich Nietzsche", "B) Immanuel Kant", "C) Søren Kierkegaard", "D) Jean-Jacques Rousseau"],
+                 ["A) Nietzsche", "B) Kant", "C) Kierkegaard", "D) Rousseau"],
                  "B"),
         Question("What is the largest species of shark?",
                  ["A) Great White", "B) Hammerhead Shark", "C) Whale Shark", "D) Tiger Shark"],
                  "A"),
-        Question("In which year did the Berlin Wall fall, leading to the reunification of Germany?",
+        Question("In which year did the Berlin Wall fall?",
                  ["A) 1985", "B) 1989", "C) 1991", "D) 1995"],
                  "B"),
         Question("Which novel features the characters Winston Smith and Big Brother?",
@@ -94,7 +94,7 @@ questions = {
                  ["A) A", "B) B", "C) AB", "D) O Negative"],
                  "D"),
         Question("Which artist painted The Persistence of Memory, featuring melting clocks?",
-                 ["A) Salvador Dali", "B) Pablo Picasso", "C) Vincent Van Gogh", "D) Leonardo Da Vinci"],
+                 ["A) Salvador Dali", "B) Pablo Picasso", "C) Vincent Van Gogh", "D) Monet"],
                  "A"),
         Question("What is the largest organ in the human body?",
                  ["A) Liver", "B) Brain", "C) Skin", "D) Heart"],
@@ -145,7 +145,8 @@ def play_quiz(difficulty, username):
 
 def main():
     """
-    The main game function, takes the player's username, gives the choice of difficulty, and handles invalid choices.
+    The main game function, takes the player's username,
+    gives the choice of difficulty, and handles invalid choices.
     """
     ascii_art = r"""
                         88
