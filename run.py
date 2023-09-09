@@ -5,7 +5,6 @@ TIME_LIMIT = 60
 MAX_QUESTIONS = 5 
 
 
-
 class Question:
     """
     Structure for questions containing the question, options, and answers.
@@ -122,9 +121,16 @@ def play_quiz(difficulty, username):
     start_time = time.time()
 
     for question in questions_list:
+        # Check the time limit at the beginning of each iteration
+        elapsed_time = time.time() - start_time
+        remaining_time = TIME_LIMIT - int(elapsed_time)
+        if remaining_time <= 0:
+            print("Time's up!")
+            break
+
         print("\n" + "="*60)
         print(f"Question: {questions_list.index(question) + 1}")
-        print(f"Time remaining: {TIME_LIMIT - int(time.time() - start_time)} seconds")
+        print(f"Time remaining: {remaining_time} seconds")
 
         if question.ask():
             print("Correct!")
@@ -132,14 +138,8 @@ def play_quiz(difficulty, username):
         else:
             print("Incorrect!")
 
-        elapsed_time = time.time() - start_time
-        if elapsed_time >= TIME_LIMIT:
-            print("Time's up!")
-            break
-
     print("\n" + "="*60)
     print(f"Quiz completed, {username}! Your score: {score}/{total_questions}")
-
 
 def main():
     """
