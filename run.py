@@ -1,5 +1,10 @@
-import random
+"""
+import time to set quiz time length and
+random to randomise question selection
+"""
 import time
+import random
+
 
 TIME_LIMIT = 60
 MAX_QUESTIONS = 5
@@ -7,8 +12,8 @@ MAX_QUESTIONS = 5
 
 class Question:
     """
-    Structure for questions containing the question, options, and answers.
-    """
+     Structure for questions containing the question, options, and answers.
+     """
     def __init__(self, question, options, answer):
         """_summary_
 
