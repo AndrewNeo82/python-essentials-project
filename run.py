@@ -10,6 +10,13 @@ class Question:
     Structure for questions containing the question, options, and answers.
     """
     def __init__(self, question, options, answer):
+        """_summary_
+
+        Args:
+            question (string): _description_
+            options ([string]): _description_
+            answer (int): Index of correct option from the given list of options.
+        """
         self.question = question
         self.options = options
         self.answer = answer
