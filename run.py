@@ -15,7 +15,7 @@ class Question:
         Args:
             question (string): _description_
             options ([string]): _description_
-            answer (int): Index of correct option from the given list of options.
+            answer (int): Index of correct option from the given list.
         """
         self.question = question
         self.options = options
@@ -60,36 +60,39 @@ questions = {
                  ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Lion"],
                  "B"),
         Question("Which gas do plants primarily use for photosynthesis?",
-                 ["A) Oxygen", "B) Nitrogen", "C) Hydrogen", "D) Carbon Dioxide"],
+                 ["A) Oxygen", "B) Argon", "C) Hydrogen", "D) Carbon Dioxide"],
                  "D"),
         Question("What is the capital of Japan?",
                  ["A) Beijing", "B) Tokyo", "C) Seoul", "D) Bangkok"],
                  "B"),
         Question("Which famous scientist developed the theory of relativity?",
-                 ["A) Isaac Newton", "B) Galileo", "C) Einstein", "D) Stephen Hawking"],
+                 ["A) Newton", "B) Galileo", "C) Einstein", "D) Hawking"],
                  "C"),
         Question("Which ocean is the largest on Earth?",
                  ["A) Atlantic", "B) Indian", "C) Pacific", "D) Arctic"],
                  "C"),
         Question("What is the main function of the heart?",
-                 ["A) Pump Blood", "B) Digestion", "C) Produce Hormones", "D) Filtering waste"],
+                 ["A) Pump Blood", "B) Digestion", "C) Produce Hormones",
+                  "D) Filter waste"],
                  "A"),
-        Question("What is the process by which plants make their own food using sunlight?",
-                 ["A) Respiration", "B) Transpiration", "C) Photosynthesis", "D) Combustion"],
+        Question("What is the process by which plants make their own food?",
+                 ["A) Respiration", "B) Transpiration",
+                  "C) Photosynthesis", "D) Combustion"],
                  "C"),
     ],
     "hard": [
-        Question("In which year was the Python programming language first released?",
+        Question("In which year was the Python programming language released?",
                  ["A) 1989", "B) 1991", "C) 2000", "D) 2005"],
                  "B"),
         Question("What is the smallest prime number?",
                  ["A) 0", "B) 1", "C) 2", "D) 3"],
                  "C"),
-        Question("Which philosopher is known for his work Critique of Pure Reason?",
+        Question("Which philosopher is known for Critique of Pure Reason?",
                  ["A) Nietzsche", "B) Kant", "C) Kierkegaard", "D) Rousseau"],
                  "B"),
         Question("What is the largest species of shark?",
-                 ["A) Great White", "B) Hammerhead Shark", "C) Whale Shark", "D) Tiger Shark"],
+                 ["A) Great White", "B) Hammerhead",
+                  "C) Whale Shark", "D) Tiger Shark"],
                  "A"),
         Question("In which year did the Berlin Wall fall?",
                  ["A) 1985", "B) 1989", "C) 1991", "D) 1995"],
