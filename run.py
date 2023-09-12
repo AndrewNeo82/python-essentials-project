@@ -55,67 +55,87 @@ questions = {
         Question("What is the capital of France?",
                  ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
                  "A"),
+        
         Question("Which planet is known as the Red Planet?",
                  ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
                  "B"),
+       
         Question("Who painted the Mona Lisa?",
                  ["A) Van Gogh", "B) da Vinci", "C) Picasso", "D) Monet"],
                  "B"),
+        
         Question("What is the largest mammal in the world?",
                  ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Lion"],
                  "B"),
+        
         Question("Which gas do plants primarily use for photosynthesis?",
                  ["A) Oxygen", "B) Argon", "C) Hydrogen", "D) Carbon Dioxide"],
                  "D"),
+        
         Question("What is the capital of Japan?",
                  ["A) Beijing", "B) Tokyo", "C) Seoul", "D) Bangkok"],
                  "B"),
+        
         Question("Which famous scientist developed the theory of relativity?",
                  ["A) Newton", "B) Galileo", "C) Einstein", "D) Hawking"],
                  "C"),
+        
         Question("Which ocean is the largest on Earth?",
                  ["A) Atlantic", "B) Indian", "C) Pacific", "D) Arctic"],
                  "C"),
+        
         Question("What is the main function of the heart?",
                  ["A) Pump Blood", "B) Digestion", "C) Produce Hormones",
                   "D) Filter waste"],
                  "A"),
+        
         Question("What is the process by which plants make their own food?",
                  ["A) Respiration", "B) Transpiration",
                   "C) Photosynthesis", "D) Combustion"],
                  "C"),
     ],
     "hard": [
+        
         Question("In which year was the Python programming language released?",
                  ["A) 1989", "B) 1991", "C) 2000", "D) 2005"],
                  "B"),
+        
         Question("What is the smallest prime number?",
                  ["A) 0", "B) 1", "C) 2", "D) 3"],
                  "C"),
+        
         Question("Which philosopher is known for Critique of Pure Reason?",
                  ["A) Nietzsche", "B) Kant", "C) Kierkegaard", "D) Rousseau"],
                  "B"),
+        
         Question("What is the largest species of shark?",
                  ["A) Great White", "B) Hammerhead",
                   "C) Whale Shark", "D) Tiger Shark"],
                  "A"),
+        
+        
         Question("In which year did the Berlin Wall fall?",
                  ["A) 1985", "B) 1989", "C) 1991", "D) 1995"],
                  "B"),
+        
         Question("Which novel features the character Big Brother?",
                  ["A) Brave New World", "B) 1984",
                   "C) Fahrenheit 451", "D) The Giver"],
                  "B"),
+        
         Question("What is the rarest blood type among humans?",
                  ["A) A", "B) B", "C) AB", "D) O Negative"],
                  "D"),
+        
         Question("Which artist painted The Persistence of Memory?",
                  ["A) Salvador Dali", "B) Pablo Picasso",
                   "C) Vincent Van Gogh", "D) Monet"],
                  "A"),
+       
         Question("What is the largest organ in the human body?",
                  ["A) Liver", "B) Brain", "C) Skin", "D) Heart"],
                  "C"),
+       
         Question("Which particle carryies the electromagnetic force?",
                  ["A) Proton", "B) Neutron", "C) Electron", "D) Photon"],
                  "D"),
