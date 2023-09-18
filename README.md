@@ -68,8 +68,7 @@ I solved this by changing "const playerChoice = event.target.dataset.choice;" in
 
 
 
-[The live link can be found here 
-](https://my-python-quiz-fe97e900f186.herokuapp.com/)https://my-python-quiz-fe97e900f186.herokuapp.com/
+The live link can be found here, https://my-python-quiz-fe97e900f186.herokuapp.com/
 ## Credits   
 
 ### Content
