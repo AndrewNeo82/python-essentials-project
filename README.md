@@ -1,6 +1,6 @@
 # Quiz Game
 
-I created a Quiz game using python. The quiz allows the user to test their general knowledge with two different difficulty levels.
+I created a Quiz game using python. The quiz allows the user to test their general knowledge with two different difficulty levels and a sixty seconds time limit.
 
 # Technologies used
 * PYTHON
