@@ -18,19 +18,16 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 
 ### time limit
 
-![win](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/e0a3cb0d-f43d-4ff7-9dd3-c01f47bc53bd)
 
 ### Message 
 
 * 
-![message](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/7a101fb5-54c3-4610-8cdc-df2e40a8ae0f) ![lose](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/7028c876-8371-42e1-9861-c191b584e6b6)
+
 
 
   ### Game Over
 
 * 
-
- ![over](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/72943755-f147-4167-80ba-ae5175575786)
 
  ## Future Features 
 
@@ -50,6 +47,9 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 ## Bugs
 
 ### Solved
+
+* There was an indentation error which pretvented the quiz game from loading which i solved by eye and indenting.
+* the game would not accept lowercase answers as correct answers i solved this by converting the user input to .upper
 
 
 
