@@ -51,15 +51,16 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 
 ### Solved
 
-* When i first deployed the website to github pages the message displayed when a round is lost was not working. 
 
-I realised when i had copy pasted the code from my Win message function i had neglected to change "const winMessage = winMessages[winIndex];" to loseMessages[loseIndex];. Once i made this change the function worked as intended.
-
-* The player choice would occasionally return undefined error in the console and fail to display the player last pick.
-
-I solved this by changing "const playerChoice = event.target.dataset.choice;" in the gamePlay function to "const playerChoice = this.dataset.choice;"
 
 ## Validator Testing
+
+there are no errors remaining in the pep8 validator 
+
+![LINTER](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/50dcb6dc-2385-47ad-a823-a1b47103a129)
+
+
+
 
 ### PYTHON
 
