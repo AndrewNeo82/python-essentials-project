@@ -40,7 +40,7 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 
 ## Testing
 
-* 
+* I tested the quiz on multiple browsers eg Chrome, Firefox and Chrome and on multiple devices.
 *
 * 
   
