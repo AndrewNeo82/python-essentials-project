@@ -7,7 +7,7 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 
 ## Features 
 
-![rpsScreenshot]()
+![Untitled](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/0befae79-4069-449f-896c-545763322c74)
 
 ### Username
 
