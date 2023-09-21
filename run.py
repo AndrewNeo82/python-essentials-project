@@ -40,7 +40,8 @@ class Question:
 
 def get_user_answer():
     """
-    Get the user's answer and ensure it is valid (A, B, C, or D).
+    Get the user's answer and ensure it is valid (A, B, C, or D)
+     converts to uppercase.
     """
     while True:
         user_answer = input("Your answer is (A, B, C, or D): ").upper()
@@ -149,7 +150,7 @@ def play_quiz(difficulty, username):
     """
     questions_list = questions[difficulty]
     random.shuffle(questions_list)
-    questions_list = questions_list[:MAX_QUESTIONS]  # Use the constant here
+    questions_list = questions_list[:MAX_QUESTIONS]
     score = 0
 
     total_questions = len(questions_list)
@@ -159,7 +160,6 @@ def play_quiz(difficulty, username):
     start_time = time.time()
 
     for question in questions_list:
-        # Check the time limit at the beginning of each iteration
         elapsed_time = time.time() - start_time
         remaining_time = TIME_LIMIT - int(elapsed_time)
         if remaining_time <= 0:
