@@ -43,32 +43,31 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 * the game would not accept lowercase answers as correct answers i solved this by converting the user input to .upper
 
 
-## Validator Testing
+## Validator Testing ### PYTHON
+
 
 There are no errors remaining in the pep8 validator 
 
 ![LINTER](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/50dcb6dc-2385-47ad-a823-a1b47103a129)
 
 
-### PYTHON
-
-
 ## Deployment
 
+Steps for Deployment
+* Fork or clone this repository
+* Create a new heroku app
+* Set the buildpacks to Python and nodejs in that order
+* Link the Heroku app to the repository
+* Click on Deploy
 
 
 The live link can be found here, https://my-python-quiz-fe97e900f186.herokuapp.com/
 ## Credits   
 
+Huge thanks to my Mentor Sandeep Aggarwal for suggestions in improvemnets to the code as always.
+
 ### Content
-
-
-
-  
-
-
-
-## Media
-
+The Questions for the quiz were obtained from Chat gtp.
+The deployment section for this README was taken from the code institute ultimate battleships README
 
 
