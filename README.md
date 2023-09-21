@@ -1,6 +1,7 @@
 # Quiz Game
 
 I created a Quiz game using python. The quiz allows the user to test their general knowledge with two different difficulty levels and a sixty seconds time limit.
+A quiz is a form of game or mind sport in which players attempt to answer questions correctly on one or several specific topics. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, and skills, or simply as a hobby.
 
 # Technologies used
 * PYTHON
@@ -66,12 +67,14 @@ Steps for Deployment
 
 
 The live link can be found here, https://my-python-quiz-fe97e900f186.herokuapp.com/
+
 ## Credits   
 
 Huge thanks to my Mentor Sandeep Aggarwal for suggestions in improvemnets to the code as always.
 
 ### Content
-The Questions for the quiz were obtained from Chat gtp.
-The deployment section for this README was taken from the code institute ultimate battleships README
+* The Questions for the quiz were obtained from Chat gtp.
+* The deployment section for this README was taken from the code institute ultimate battleships README
+* Explanation of a quiz taken from wikipedia
 
 
