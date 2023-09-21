@@ -13,15 +13,19 @@ I created a Quiz game using python. The quiz allows the user to test their gener
 
 * Game allows user to input their username to add to the user experience
 
-  ### difficulty
+  ### Difficulty
 
-  * game allows user to choose between 2 difficulty levels "easy" or "hard"
-  * 
+  * The Game allows user to choose between 2 difficulty levels "easy" or "hard"
+  
 ![difficulty](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/5dc2a444-21db-4264-a4a8-20d3c017a745)
 
     
 ### Time Limit
+
 * I added a time limit to add a sense of urgency and enhance the user experience and also increase replayability.
+
+ ![timelimit](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/9734969f-a71c-486d-802a-ed09315d5617)
+
 
 
  ## Future Features 
