@@ -31,7 +31,7 @@ A quiz is a form of game or mind sport in which players attempt to answer questi
 
  ## Future Features 
 
- * I would like to add a modal for the player to enter a username which opens automatically on page load and insert the username into the game in place of the term "player" to make a better user experience.
+ * I would like to add more questions and a way to assign a score based upon questions answered correctly and time taken which can be saved.
 
 ## Testing
 
