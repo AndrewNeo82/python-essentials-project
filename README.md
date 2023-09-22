@@ -6,22 +6,22 @@ A quiz is a form of game or mind sport in which players attempt to answer questi
 # Technologies used
 * PYTHON
 
-## Features 
+# Features 
 
 ![Untitled](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/0befae79-4069-449f-896c-545763322c74)
 
-### Username
+## Username
 
 * Game allows user to input their username to add to the user experience
 
-  ### Difficulty
+  ## Difficulty
 
   * The Game allows user to choose between 2 difficulty levels "easy" or "hard"
   
 ![difficulty](https://github.com/AndrewNeo82/python-essentials-project/assets/90483176/5dc2a444-21db-4264-a4a8-20d3c017a745)
 
     
-### Time Limit
+## Time Limit
 
 * I added a time limit to add a sense of urgency and enhance the user experience and also increase replayability.
 
@@ -68,11 +68,11 @@ Steps for Deployment
 
 The live link can be found here, https://my-python-quiz-fe97e900f186.herokuapp.com/
 
-## Credits   
+# Credits   
 
 Huge thanks to my Mentor Sandeep Aggarwal for suggestions in improvemnets to the code as always.
 
-### Content
+## Content
 * The Questions for the quiz were obtained from Chat gtp.
 * The deployment section for this README was taken from the code institute ultimate battleships README
 * Explanation of a quiz taken from wikipedia
