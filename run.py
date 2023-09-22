@@ -156,7 +156,7 @@ def play_quiz(difficulty, username):
     total_questions = len(questions_list)
 
     print("\n" + "="*60)
-    print(f"Quiz started for {TIME_LIMIT} seconds...")
+    print(f"Quiz started {TIME_LIMIT} seconds remaining...")
     start_time = time.time()
 
     for question in questions_list:
